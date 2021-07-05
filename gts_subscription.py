@@ -98,8 +98,8 @@ combine the categorical and numumrical features to a longer feature vector
 
 feature_stages.append(
 	VectorAssembler(
-    inputCols = feature_vec_columns,
-    outputCol="original_features")
+    	inputCols = feature_vec_columns,
+    	outputCol="original_features")
     )
 
 '''
@@ -110,8 +110,8 @@ feature_stages.append(
 	StandardScaler(
 	inputCol="original_features", 
 	outputCol="features",
-    withStd=True, 
-    withMean=False)
+    	withStd=True, 
+    	withMean=False)
 	)
 
 ##########transforming the features 
